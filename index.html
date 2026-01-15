@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice-Cream Order Form</title>
+</head>
+ <main>
+<h1> Ice Cream Order Form</h1>
+<!-- favicon -->
+<link rel="icon" href="styles/ice-cream.png" type="image/png">
+<!-- stylesheet-->
+ <link rel="stylesheet" href="stylesheet.css">
+ <body>
+    <form id="icecream-form" action="#" method="get">
+     <!-- Personal Info-->
+     <fieldset>
+        <legend> Personal Information</legend>
+        <label for="fname"> Name: </label>
+        <input type="text" id="name" name="name">
+        <label for="email"> Email: </label>
+        <input type="text" id="email" name="email">
+     </fieldset>
+        
+ </body>
+   
+<body>
+    <fieldset>
+        <legend>Order Details</legend>
+        <label for="order"> Choose your flavor: </label>
+        <select id ="order" name ="order">
+        <option value="vanilla">Vanilla</option>    
+        <option value="chocolate">Chocolate</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="mint">Mint</option>
+        <option value="cookie-dough">Cookie Dough</option>
+        </select>
+
+        <label for="cone">Choose your cone:</label>  
+        <input type="radio" id="waffle" value="waffle" name="method">Waffle Cone</input>
+        <input type="radio" id="sugar-cone" value="sugar-cone" name="method">Sugar Cone</input>
+        <input type="radio" id="cup" value="cup" name="method">Cup</input>
+        <br>
+        <label for="Toppings"class="space">Choose your toppings:</label>
+
+        <input type="checkbox" id="sprinkles" value="sprinkles" name="toppings[]">Sprinkles
+        <input type="checkbox" id="nuts" value="nuts" name="toppings[]">Nuts
+        <input type="checkbox" id="cherry" value="cherry" name="toppings[]">Cherry
+        <input type="checkbox" id="whipped-cream" value="whipped-cream" name="toppings[]">Whipped Cream
+
+        <br>
+        <!-- Comment field -->
+         <label for="comment"> Additional Comments:</label>
+         <textarea id="comment" name="comment" row="5"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="order-button">Submit Order</button>
+        
+    </fieldset>
+</form>
+</main>
+</body>
+</html>
